@@ -36,3 +36,7 @@ forja-sul-studio/
 │   └── images/
 │       └── hero-forja-sul.png
 └── README.md
+
+## Status
+
+Projeto publicado com GitHub Pages e em desenvolvimento contínuo.
