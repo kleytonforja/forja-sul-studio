@@ -19,6 +19,24 @@ menuToggle.addEventListener("click", function () {
         menuEstaAberto ? "✕" : "☰";
 });
 
+const navLinks = mainNav.querySelectorAll("a");
+
+navLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        mainNav.classList.remove("active");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        menuToggle.textContent = "☰";
+
+    });
+
+});
 whatsappButton.addEventListener(
     "click",
     function () {
