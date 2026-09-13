@@ -1,5 +1,14 @@
-const botaoContato = document.getElementById("botaoContato");
+const whatsappButton =
+    document.getElementById("whatsappButton");
 
-botaoContato.addEventListener("click", function () {
-    alert("Em breve você poderá falar com a Forja Sul Studio pelo WhatsApp!");
-});
+
+whatsappButton.addEventListener(
+    "click",
+    function () {
+
+        alert(
+            "Na próxima etapa vamos conectar este botão ao WhatsApp da Forja Sul Studio."
+        );
+
+    }
+);
