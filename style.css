@@ -41,6 +41,7 @@ body {
 
 
 .header-content {
+    position: relative;
     min-height: 76px;
 
     display: flex;
@@ -464,11 +465,45 @@ body {
 
     object-fit: cover;
 }
+.menu-toggle {
+    display: none;
+
+    background: transparent;
+    border: none;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
 @media (max-width: 850px) {
 
-    .nav {
-        display: none;
-    }
+    .menu-toggle {
+    display: block;
+}
+
+.nav {
+    display: none;
+
+    position: absolute;
+
+    top: 76px;
+    left: 0;
+    right: 0;
+
+    flex-direction: column;
+
+    padding: 20px;
+
+    background: #08111f;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav.active {
+    display: flex;
+}
 
 
     .header .button-small {
