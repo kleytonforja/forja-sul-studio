@@ -41,8 +41,20 @@ whatsappButton.addEventListener(
     "click",
     function () {
 
-        alert(
-            "Na próxima etapa vamos conectar este botão ao WhatsApp da Forja Sul Studio."
+        const numeroWhatsApp = "5548999999999";
+
+        const mensagem =
+            "Olá! Vi o site da Forja Sul Studio e gostaria de saber mais sobre as soluções digitais.";
+
+        const mensagemCodificada =
+            encodeURIComponent(mensagem);
+
+        const urlWhatsApp =
+            `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
+
+        window.open(
+            urlWhatsApp,
+            "_blank"
         );
 
     }
